@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFH Chartered Accountants - Website Variants</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: fadeInDown 0.8s ease;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        .variants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .variant-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeInUp 0.6s ease backwards;
+        }
+        .variant-card:nth-child(1) { animation-delay: 0.1s; }
+        .variant-card:nth-child(2) { animation-delay: 0.2s; }
+        .variant-card:nth-child(3) { animation-delay: 0.3s; }
+        .variant-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .variant-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .variant-title {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .variant-desc {
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .variant-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            text-align: center;
+        }
+        .variant-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .variants-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MFH Chartered Accountants</h1>
+            <p class="subtitle">Select a website variant to preview</p>
+        </header>
+        <div class="variants-grid">
+            <div class="variant-card">
+                <span class="variant-number">Variant 1</span>
+                <h2 class="variant-title">Hero-Split Minimalist</h2>
+                <p class="variant-desc">Clean, professional design with a split-screen hero section. Features smooth scroll animations, trust-building elements, and prominent call-to-action buttons. Perfect for establishing credibility with corporate clients in Pretoria and Johannesburg.</p>
+                <a href="variant1.html" class="variant-link">View Variant 1 →</a>
+            </div>
+            <div class="variant-card">
+                <span class="variant-number">Variant 2</span>
+                <h2 class="variant-title">Immersive Scroll Narrative</h2>
+                <p class="variant-desc">Engaging storytelling approach with parallax effects and reveal animations as users scroll. Highlights the complete journey from company registration to audit compliance. Ideal for educating potential clients about your full service range.</p>
+                <a href="variant2.html" class="variant-link">View Variant 2 →</a>
+            </div>
+            <div class="variant-card">
+                <span class="variant-number">Variant 3</span>
+                <h2 class="variant-title">Dark Mode Premium</h2>
+                <p class="variant-desc">Sophisticated dark theme with gold accents conveying premium service quality. Features glassmorphism cards, subtle hover effects, and a modern aesthetic that stands out in the financial services industry.</p>
+                <a href="variant3.html" class="variant-link">View Variant 3 →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
