@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFH | Forensic Accounting & Compliance</title>
+    <meta name="description" content="Expert forensic accounting, fraud investigation, regulatory compliance, and dispute resolution services for businesses and legal professionals.">
+    <meta name="keywords" content="forensic accounting, fraud investigation, compliance audit, expert witness, financial disputes">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #0a0a0a;
+            --color-surface: #1a1a1a;
+            --color-primary: #ffffff;
+            --color-accent: #6b7280;
+            --font-heading: 'IBM Plex Sans', sans-serif;
+            --font-body: 'IBM Plex Serif', serif;
+        }
+        
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+        
+        body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-primary); line-height: 1.7; }
+        h1, h2, h3 { font-family: var(--font-heading); font-weight: 600; line-height: 1.2; }
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+        .section { padding: 5rem 0; }
+        
+        .btn { display: inline-block; padding: 1rem 2rem; background: white; color: black; font-family: var(--font-heading); font-weight: 600; text-decoration: none; transition: all 0.3s; }
+        .btn:hover { background: #d1d5db; transform: translateY(-2px); }
+        
+        /* Header */
+        .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,10,0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #333; z-index: 1000; }
+        .header__inner { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; }
+        .nav { display: none; }
+        .nav__list { display: flex; gap: 2rem; list-style: none; }
+        .nav__link { color: #9ca3af; font-family: var(--font-heading); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        @media (min-width: 768px) { .nav { display: block; } }
+        
+        /* Hero */
+        .hero { padding-top: calc(80px + 4rem); padding-bottom: 4rem; min-height: 80vh; display: flex; align-items: center; }
+        .hero__content { max-width: 800px; }
+        .hero p { color: #9ca3af; font-size: 1.25rem; }
+        
+        /* Services */
+        .services { background: var(--color-surface); }
+        .section-header { margin-bottom: 3rem; }
+        .section-header p { color: #6b7280; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.875rem; font-family: var(--font-heading); }
+        
+        .services__grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        .service-item { padding: 2rem; border-left: 2px solid #333; transition: all 0.3s; opacity: 0; transform: translateX(-20px); }
+        .service-item.visible { opacity: 1; transform: translateX(0); }
+        .service-item:hover { border-left-color: white; background: rgba(255,255,255,0.02); }
+        .service-item h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+        .service-item p { color: #9ca3af; font-size: 0.95rem; }
+        @media (min-width: 768px) { .services__grid { grid-template-columns: repeat(2, 1fr); } }
+        
+        /* Expertise */
+        .expertise { background: var(--color-bg); }
+        .expertise__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        .stat { text-align: left; }
+        .stat__number { font-size: 3rem; font-weight: 700; font-family: var(--font-heading); }
+        .stat__label { color: #6b7280; font-family: var(--font-heading); font-size: 0.875rem; text-transform: uppercase; }
+        @media (min-width: 768px) { .expertise__grid { grid-template-columns: repeat(4, 1fr); } }
+        
+        /* Contact */
+        .contact__grid { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+        .contact-info p { color: #9ca3af; margin-bottom: 0.5rem; }
+        .contact-form { background: var(--color-surface); padding: 2rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-label { display: block; font-family: var(--font-heading); font-size: 0.875rem; margin-bottom: 0.5rem; color: #9ca3af; }
+        .form-input, .form-textarea { width: 100%; padding: 1rem; background: #0a0a0a; border: 1px solid #333; color: white; font-family: var(--font-body); }
+        .form-input:focus, .form-textarea:focus { outline: none; border-color: #6b7280; }
+        @media (min-width: 768px) { .contact__grid { grid-template-columns: 1fr 1fr; } }
+        
+        /* Footer */
+        .footer { background: var(--color-surface); padding: 2rem 0; text-align: center; color: #6b7280; font-family: var(--font-heading); font-size: 0.875rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="/" class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32"/>
+                    <path d="M16 8L22 14V24H10V14L16 8Z" fill="white"/>
+                    <circle cx="16" cy="18" r="2" fill="#6b7280"/>
+                </svg>
+                MFH
+            </a>
+            <nav class="nav"><ul class="nav__list"><li><a href="#services" class="nav__link">Services</a></li><li><a href="#expertise" class="nav__link">Expertise</a></li><li><a href="#contact" class="nav__link">Contact</a></li></ul></nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>Forensic Accounting & Investigation</h1>
+                    <p>Expert financial investigation, fraud detection, and dispute resolution services for law firms, corporations, and insurance companies.</p>
+                    <div style="margin-top:2rem;"><a href="#contact" class="btn">Secure Consultation</a></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-header">
+                    <p>Services</p>
+                    <h2>Investigative Excellence</h2>
+                </div>
+                
+                <div class="services__grid">
+                    <article class="service-item">
+                        <h3>Fraud Investigation</h3>
+                        <p>Comprehensive fraud examinations including asset tracing, employee theft, and financial statement fraud analysis.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3>Dispute Resolution</h3>
+                        <p>Financial analysis and quantum calculations for commercial disputes, partnership disagreements, and contract claims.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3>Expert Witness</h3>
+                        <p>Court-ready expert testimony and report preparation for litigation support and arbitration proceedings.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3>Regulatory Compliance</h3>
+                        <p>AML, sanctions, and regulatory compliance reviews. Internal investigations and remediation support.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3>Asset Recovery</h3>
+                        <p>Tracing and recovery of misappropriated assets domestically and internationally through legal channels.</p>
+                    </article>
+                    <article class="service-item">
+                        <h3>Due Diligence</h3>
+                        <p>Enhanced financial due diligence for M&A transactions, identifying risks and hidden liabilities.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="expertise" class="expertise section">
+            <div class="container">
+                <div class="section-header">
+                    <p>Track Record</p>
+                    <h2>Proven Results</h2>
+                </div>
+                
+                <div class="expertise__grid">
+                    <div class="stat"><div class="stat__number">15+</div><div class="stat__label">Years Experience</div></div>
+                    <div class="stat"><div class="stat__number">200+</div><div class="stat__label">Cases Investigated</div></div>
+                    <div class="stat"><div class="stat__number">£500M+</div><div class="stat__label">Assets Traced</div></div>
+                    <div class="stat"><div class="stat__number">100%</div><div class="stat__label">Court Admissible</div></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p>Contact</p>
+                    <h2>Confidential Enquiry</h2>
+                </div>
+                
+                <div class="contact__grid">
+                    <div class="contact-info">
+                        <p style="margin-bottom:1.5rem;">All consultations are strictly confidential. Our team is available for urgent matters 24/7.</p>
+                        <p><strong style="color:white;">Telephone:</strong><br><a href="tel:+442071234567" style="color:#9ca3af;">020 7123 4567</a></p>
+                        <p style="margin-top:1rem;"><strong style="color:white;">Email:</strong><br><a href="mailto:forensic@mfhaccountants.co.uk" style="color:#9ca3af;">forensic@mfhaccountants.co.uk</a></p>
+                        <p style="margin-top:1rem;"><strong style="color:white;">Office:</strong><br><span style="color:#9ca3af;">123 High Street, Kensington<br>London, SW7 2AZ</span></p>
+                        <div style="background:#1a1a1a;height:200px;margin-top:1.5rem;display:flex;align-items:center;justify-content:center;color:#4b5563;">Secure Location Map</div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-group"><label class="form-label">Name</label><input type="text" class="form-input" required></div>
+                        <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" required></div>
+                        <div class="form-group"><label class="form-label">Organisation</label><input type="text" class="form-input"></div>
+                        <div class="form-group"><label class="form-label">Enquiry Type</label><select class="form-input"><option>Fraud Investigation</option><option>Dispute Resolution</option><option>Expert Witness</option><option>Compliance</option><option>Other</option></select></div>
+                        <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" rows="4" required></textarea></div>
+                        <button type="submit" class="btn" style="width:100%;">Submit Securely</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer"><p>&copy; 2024 MFH Chartered Accountants. All communications encrypted.</p></footer>
+    
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"MFH Forensic Accounting","address":{"@type":"PostalAddress","streetAddress":"123 High Street","addressLocality":"London","postalCode":"SW7 2AZ","addressCountry":"GB"},"telephone":"+44-20-7123-4567"}</script>
+    
+    <script>
+        const observer = new IntersectionObserver((entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')), {threshold: 0.1});
+        document.querySelectorAll('.service-item').forEach(el => observer.observe(el));
+        document.querySelector('.contact-form')?.addEventListener('submit', e => { e.preventDefault(); alert('Encrypted submission received.'); e.target.reset(); });
+    </script>
+</body>
+</html>

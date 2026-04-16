@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFH Chartered Accountants | Professional Financial Services</title>
+    <meta name="description" content="MFH Chartered Accountants provides expert accounting, tax planning, audit, and advisory services for SMEs, startups, and corporations across the UK.">
+    <meta name="keywords" content="chartered accountants, tax planning, audit services, bookkeeping, financial advisory, MFH">
+    <meta name="author" content="MFH Chartered Accountants">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MFH Chartered Accountants | Trusted Financial Partners">
+    <meta property="og:description" content="Expert accounting, tax, and advisory services for businesses of all sizes. Over 20 years of trusted financial guidance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mfhaccountants.co.uk">
+    <meta property="og:image" content="https://mfhaccountants.co.uk/og-image.jpg">
+    <meta property="og:site_name" content="MFH Chartered Accountants">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MFH Chartered Accountants | Professional Financial Services">
+    <meta name="twitter:description" content="Expert accounting, tax planning, and advisory services for UK businesses.">
+    <meta name="twitter:image" content="https://mfhaccountants.co.uk/twitter-image.jpg">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mfhaccountants.co.uk">
+    
+    <!-- Preconnect to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Corporate Navy & Gold Theme */
+            --color-primary: #1a365d;
+            --color-primary-dark: #0f2442;
+            --color-primary-light: #2c4a75;
+            --color-accent: #c9a961;
+            --color-accent-hover: #b8964e;
+            --color-neutral-50: #f8fafc;
+            --color-neutral-100: #f1f5f9;
+            --color-neutral-200: #e2e8f0;
+            --color-neutral-300: #cbd5e1;
+            --color-neutral-400: #94a3b8;
+            --color-neutral-500: #64748b;
+            --color-neutral-600: #475569;
+            --color-neutral-700: #334155;
+            --color-neutral-800: #1e293b;
+            --color-neutral-900: #0f172a;
+            --color-success: #059669;
+            --color-white: #ffffff;
+            
+            /* Typography */
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            
+            /* Spacing */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            
+            /* Border Radius */
+            --radius-sm: 0.25rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 1rem;
+            --radius-full: 9999px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+            
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-base: 300ms ease;
+            --transition-slow: 500ms ease;
+        }
+        
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--color-neutral-700);
+            background-color: var(--color-white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--color-primary);
+        }
+        
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+        h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+        h4 { font-size: clamp(1.125rem, 2.5vw, 1.5rem); }
+        
+        p {
+            margin-bottom: var(--space-md);
+            max-width: 65ch;
+        }
+        
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        
+        a:hover {
+            color: var(--color-accent);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        ul, ol {
+            list-style: none;
+        }
+        
+        button, .btn {
+            font-family: var(--font-body);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+        
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+        
+        .section {
+            padding: var(--space-4xl) 0;
+        }
+        
+        .text-center { text-align: center; }
+        .text-primary { color: var(--color-primary); }
+        .text-accent { color: var(--color-accent); }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: var(--space-md) var(--space-xl);
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-primary-dark);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            transform: translateY(-2px);
+        }
+        
+        .btn:focus-visible {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--color-white);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: all var(--transition-base);
+        }
+        
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .header__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-md) var(--space-lg);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .logo__svg {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .logo__text {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+        
+        .nav {
+            display: none;
+        }
+        
+        .nav__list {
+            display: flex;
+            gap: var(--space-xl);
+        }
+        
+        .nav__link {
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            position: relative;
+        }
+        
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-accent);
+            transition: width var(--transition-base);
+        }
+        
+        .nav__link:hover::after {
+            width: 100%;
+        }
+        
+        .nav__link:hover {
+            color: var(--color-primary);
+        }
+        
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            padding: var(--space-sm);
+        }
+        
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: var(--color-primary);
+            margin: 5px 0;
+            transition: all var(--transition-fast);
+        }
+        
+        @media (min-width: 768px) {
+            .nav {
+                display: block;
+            }
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: calc(80px + var(--space-4xl));
+            padding-bottom: var(--space-4xl);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: var(--color-white);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a961' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .hero__content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+        
+        .hero__title {
+            color: var(--color-white);
+            margin-bottom: var(--space-lg);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .hero__subtitle {
+            font-size: 1.25rem;
+            color: var(--color-neutral-200);
+            margin-bottom: var(--space-xl);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+        
+        .hero__actions {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+        
+        .hero__stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-3xl);
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat__number {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-accent);
+        }
+        
+        .stat__label {
+            font-size: 0.875rem;
+            color: var(--color-neutral-300);
+        }
+        
+        @media (min-width: 768px) {
+            .hero__stats {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--color-neutral-50);
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto var(--space-3xl);
+        }
+        
+        .section-header__subtitle {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-accent);
+            margin-bottom: var(--space-sm);
+        }
+        
+        .services__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+        }
+        
+        .service-card {
+            background-color: var(--color-white);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .service-card__icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: var(--space-md);
+        }
+        
+        .service-card__title {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .service-card__link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-weight: 500;
+            color: var(--color-accent);
+            margin-top: var(--space-md);
+        }
+        
+        .service-card__link svg {
+            transition: transform var(--transition-fast);
+        }
+        
+        .service-card__link:hover svg {
+            transform: translateX(4px);
+        }
+        
+        @media (min-width: 768px) {
+            .services__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .services__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--color-white);
+        }
+        
+        .about__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+        
+        .about__image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .about__image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, var(--color-neutral-200) 0%, var(--color-neutral-300) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-neutral-500);
+        }
+        
+        .about__content {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .about__content.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .about__features {
+            margin-top: var(--space-xl);
+        }
+        
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+        
+        .feature__icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            color: var(--color-accent);
+        }
+        
+        @media (min-width: 768px) {
+            .about__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+        
+        .testimonials .section-header__subtitle {
+            color: var(--color-accent);
+        }
+        
+        .testimonials .section-header__title {
+            color: var(--color-white);
+        }
+        
+        .testimonials__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255,255,255,0.05);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--color-accent);
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .testimonial-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .testimonial-card__quote {
+            font-size: 1.125rem;
+            font-style: italic;
+            margin-bottom: var(--space-lg);
+            line-height: 1.8;
+        }
+        
+        .testimonial-card__author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+        
+        .testimonial-card__avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-full);
+            background-color: var(--color-neutral-300);
+        }
+        
+        .testimonial-card__name {
+            font-weight: 600;
+            color: var(--color-white);
+        }
+        
+        .testimonial-card__role {
+            font-size: 0.875rem;
+            color: var(--color-neutral-300);
+        }
+        
+        @media (min-width: 768px) {
+            .testimonials__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .testimonials__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--color-neutral-50);
+        }
+        
+        .contact__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-3xl);
+        }
+        
+        .contact-info {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease;
+        }
+        
+        .contact-info.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .contact-item__icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            color: var(--color-accent);
+        }
+        
+        .contact-item__label {
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-neutral-500);
+            margin-top: var(--space-lg);
+        }
+        
+        .contact-form-wrapper {
+            background-color: var(--color-white);
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .contact-form-wrapper.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-md);
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: var(--space-xs);
+            color: var(--color-neutral-700);
+        }
+        
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: var(--space-md);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--radius-md);
+            transition: border-color var(--transition-fast);
+        }
+        
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+        
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        @media (min-width: 768px) {
+            .contact__grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--color-primary-dark);
+            color: var(--color-neutral-300);
+            padding: var(--space-4xl) 0 var(--space-xl);
+        }
+        
+        .footer__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .footer__brand .logo {
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer__brand .logo__text {
+            color: var(--color-white);
+        }
+        
+        .footer__description {
+            max-width: 300px;
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer__social {
+            display: flex;
+            gap: var(--space-md);
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: var(--radius-full);
+            color: var(--color-white);
+            transition: all var(--transition-fast);
+        }
+        
+        .social-link:hover {
+            background-color: var(--color-accent);
+            color: var(--color-primary-dark);
+        }
+        
+        .footer__heading {
+            font-size: 1.125rem;
+            color: var(--color-white);
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer__list li {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .footer__list a {
+            color: var(--color-neutral-300);
+            transition: color var(--transition-fast);
+        }
+        
+        .footer__list a:hover {
+            color: var(--color-accent);
+        }
+        
+        .footer__bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: var(--space-lg);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .footer__grid {
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+            }
+            .footer__bottom {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-accent);
+            color: var(--color-primary-dark);
+            padding: var(--space-sm) var(--space-md);
+            z-index: 1001;
+            transition: top var(--transition-fast);
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 72px;
+            left: 0;
+            right: 0;
+            background-color: var(--color-white);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-base);
+            z-index: 999;
+        }
+        
+        .mobile-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mobile-menu__list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+        
+        .mobile-menu__link {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header__inner">
+            <a href="/" class="logo" aria-label="MFH Chartered Accountants Home">
+                <svg class="logo__svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="48" height="48" rx="8" fill="#1a365d"/>
+                    <path d="M24 12L32 20V32H16V20L24 12Z" fill="#c9a961"/>
+                    <path d="M24 16L28 20V28H20V20L24 16Z" fill="#1a365d"/>
+                    <circle cx="24" cy="24" r="4" fill="#c9a961"/>
+                </svg>
+                <span class="logo__text">MFH</span>
+            </a>
+            
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+        <ul class="mobile-menu__list">
+            <li><a href="#services" class="mobile-menu__link">Services</a></li>
+            <li><a href="#about" class="mobile-menu__link">About</a></li>
+            <li><a href="#testimonials" class="mobile-menu__link">Testimonials</a></li>
+            <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 id="hero-title">Trusted Financial Guidance for Over 20 Years</h1>
+                    <p class="hero__subtitle">MFH Chartered Accountants delivers expert accounting, tax planning, and strategic advisory services to help your business thrive in today's complex financial landscape.</p>
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn-primary">Book Free Consultation</a>
+                        <a href="#services" class="btn btn-outline" style="border-color: #c9a961; color: #c9a961;">Explore Services</a>
+                    </div>
+                </div>
+                
+                <div class="hero__stats">
+                    <div class="stat">
+                        <div class="stat__number">20+</div>
+                        <div class="stat__label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">500+</div>
+                        <div class="stat__label">Clients Served</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">£50M+</div>
+                        <div class="stat__label">Tax Saved</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">100%</div>
+                        <div class="stat__label">Compliance Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services section" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-header__subtitle">What We Offer</p>
+                    <h2 id="services-title" class="section-header__title">Comprehensive Accounting Solutions</h2>
+                    <p>From day-to-day bookkeeping to strategic financial planning, our full-service approach ensures every aspect of your finances is managed with precision and care.</p>
+                </div>
+                
+                <div class="services__grid">
+                    <article class="service-card" tabindex="0">
+                        <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="8" y="12" width="48" height="40" rx="4" stroke="#1a365d" stroke-width="2"/>
+                            <path d="M8 24H56" stroke="#1a365d" stroke-width="2"/>
+                            <circle cx="20" cy="18" r="2" fill="#c9a961"/>
+                            <path d="M20 32H32M20 40H44" stroke="#1a365d" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class="service-card__title">Corporate Tax Planning</h3>
+                        <p>Strategic tax optimization for limited companies, ensuring compliance while minimizing liabilities through legitimate allowances and reliefs.</p>
+                        <a href="#contact" class="service-card__link" aria-label="Learn more about Corporate Tax Planning">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="32" cy="32" r="24" stroke="#1a365d" stroke-width="2"/>
+                            <path d="M32 20V32L40 36" stroke="#1a365d" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="32" cy="32" r="3" fill="#c9a961"/>
+                        </svg>
+                        <h3 class="service-card__title">Audit & Assurance</h3>
+                        <p>Independent statutory audits and assurance services providing stakeholders with confidence in your financial reporting and internal controls.</p>
+                        <a href="#contact" class="service-card__link" aria-label="Learn more about Audit & Assurance">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 52V20L32 12L52 20V52H12Z" stroke="#1a365d" stroke-width="2"/>
+                            <path d="M24 52V36H40V52" stroke="#1a365d" stroke-width="2"/>
+                            <circle cx="32" cy="28" r="4" fill="#c9a961"/>
+                        </svg>
+                        <h3 class="service-card__title">Bookkeeping Services</h3>
+                        <p>Accurate, timely bookkeeping using cloud-based solutions like Xero and QuickBooks, giving you real-time visibility into your financial health.</p>
+                        <a href="#contact" class="service-card__link" aria-label="Learn more about Bookkeeping Services">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="16" y="16" width="32" height="32" rx="4" stroke="#1a365d" stroke-width="2"/>
+                            <path d="M24 32H40M32 24V40" stroke="#1a365d" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="32" cy="32" r="6" stroke="#c9a961" stroke-width="2"/>
+                        </svg>
+                        <h3 class="service-card__title">Business Advisory</h3>
+                        <p>Strategic guidance on cash flow management, growth planning, and operational efficiency to help you make informed business decisions.</p>
+                        <a href="#contact" class="service-card__link" aria-label="Learn more about Business Advisory">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M12 52L32 12L52 52H12Z" stroke="#1a365d" stroke-width="2"/>
+                            <circle cx="32" cy="36" r="6" fill="#c9a961"/>
+                            <path d="M32 30V24" stroke="#1a365d" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class="service-card__title">Personal Tax & Wealth</h3>
+                        <p>Comprehensive personal tax returns, inheritance tax planning, and wealth management strategies for high-net-worth individuals.</p>
+                        <a href="#contact" class="service-card__link" aria-label="Learn more about Personal Tax & Wealth">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <svg class="service-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect x="12" y="20" width="40" height="32" rx="4" stroke="#1a365d" stroke-width="2"/>
+                            <path d="M20 32H44M20 40H36" stroke="#1a365d" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="44" cy="28" r="6" stroke="#c9a961" stroke-width="2"/>
+                            <path d="M44 25V31M41 28H47" stroke="#c9a961" stroke-width="2"/>
+                        </svg>
+                        <h3 class="service-card__title">Payroll & CIS</h3>
+                        <p>Full payroll processing, RTI submissions, and Construction Industry Scheme management ensuring compliance with HMRC regulations.</p>
+                        <a href="#contact" class="service-card__link" aria-label="Learn more about Payroll & CIS">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about section" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about__grid">
+                    <div class="about__image">
+                        <div class="about__image-placeholder" aria-label="Office building representing MFH headquarters">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="20" width="40" height="32" stroke="#94a3b8" stroke-width="2"/>
+                                <path d="M20 28H44M20 36H44M20 44H44" stroke="#94a3b8" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="about__content">
+                        <p class="section-header__subtitle">About MFH</p>
+                        <h2 id="about-title">Your Partner in Financial Success</h2>
+                        <p>Founded in 2003, MFH Chartered Accountants has grown from a small local practice to a respected firm serving clients across the UK. Our team of qualified chartered accountants combines technical expertise with genuine care for your business success.</p>
+                        <p>We believe in building long-term relationships based on trust, transparency, and tangible results. Whether you're a startup founder or an established corporation, we tailor our services to your unique needs and goals.</p>
+                        
+                        <div class="about__features">
+                            <div class="feature">
+                                <svg class="feature__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>ICAEW Registered & Regulated Practice</span>
+                            </div>
+                            <div class="feature">
+                                <svg class="feature__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Dedicated Account Manager for Every Client</span>
+                            </div>
+                            <div class="feature">
+                                <svg class="feature__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Cloud-Based Technology Integration</span>
+                            </div>
+                            <div class="feature">
+                                <svg class="feature__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Proactive Tax Planning Year-Round</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary" style="margin-top: var(--space-lg);">Schedule a Meeting</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+ <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-header__subtitle">Client Stories</p>
+                    <h2 id="testimonials-title" class="section-header__title">Trusted by Businesses Like Yours</h2>
+                    <p>Don't just take our word for it. Hear from some of the 500+ clients who have transformed their financial operations with MFH.</p>
+                </div>
+                
+                <div class="testimonials__grid">
+                    <article class="testimonial-card" tabindex="0">
+                        <p class="testimonial-card__quote">"MFH transformed our accounting processes. Their proactive tax planning saved us over £45,000 in our first year alone. The team is responsive, knowledgeable, and truly invested in our success."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar" style="background-color: #e2e8f0;" role="img" aria-label="Photo of James Mitchell"></div>
+                            <div>
+                                <p class="testimonial-card__name">James Mitchell</p>
+                                <p class="testimonial-card__role">CEO, TechStart Solutions Ltd</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="testimonial-card" tabindex="0">
+                        <p class="testimonial-card__quote">"As a retail business owner, I needed accountants who understand the unique challenges of our industry. MFH's expertise in VAT and inventory accounting has been invaluable. Highly recommended."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar" style="background-color: #cbd5e1;" role="img" aria-label="Photo of Sarah Thompson"></div>
+                            <div>
+                                <p class="testimonial-card__name">Sarah Thompson</p>
+                                <p class="testimonial-card__role">Founder, Boutique Retail Group</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="testimonial-card" tabindex="0">
+                        <p class="testimonial-card__quote">"The peace of mind that comes with knowing our finances are in capable hands is priceless. MFH handles everything from payroll to year-end accounts flawlessly. They're an extension of our team."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar" style="background-color: #94a3b8;" role="img" aria-label="Photo of David Chen"></div>
+                            <div>
+                                <p class="testimonial-card__name">David Chen</p>
+                                <p class="testimonial-card__role">Director, Chen Construction Ltd</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-header__subtitle">Get in Touch</p>
+                    <h2 id="contact-title" class="section-header__title">Let's Discuss Your Financial Goals</h2>
+                    <p>Ready to take control of your finances? Contact us today for a free, no-obligation consultation with one of our qualified accountants.</p>
+                </div>
+                
+                <div class="contact__grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div>
+                                <p class="contact-item__label">Visit Our Office</p>
+                                <p>123 High Street, Kensington<br>London, SW7 2AZ<br>United Kingdom</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.49 21.55 20.95 20.98 20.99C20.66 21 20.34 21 20 21C9.5 21 1 12.5 1 2C1 1.66 1 1.34 1.01 1C1.05 0.45 1.5 0 2.07 0H5.07C5.5 0 5.87 0.31 5.96 0.73L6.96 5.23C7.08 5.74 6.87 6.27 6.44 6.56L4.57 7.82C5.92 10.43 8.03 12.54 10.64 13.89L11.9 12.02C12.19 11.59 12.72 11.38 13.23 11.5L17.73 12.5C18.15 12.59 18.46 12.96 18.46 13.39V16.39C18.46 16.68 18.23 16.92 17.94 16.92H16.42C13.33 16.92 10.5 15.55 8.5 13.55C6.5 11.55 5.13 8.72 5.13 5.63V4.11C5.13 3.82 5.36 3.59 5.65 3.59H8.65C8.94 3.59 9.17 3.82 9.17 4.11V5.63C9.17 5.92 8.94 6.15 8.65 6.15H7.13C7.13 8.5 8.13 10.63 9.63 12.13C11.13 13.63 13.26 14.63 15.61 14.63V13.11C15.61 12.82 15.84 12.59 16.13 12.59H17.65C17.94 12.59 18.17 12.82 18.17 13.11V16.11C18.17 16.4 17.94 16.63 17.65 16.63H16.13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <p class="contact-item__label">Call Us</p>
+                                <p><a href="tel:+442071234567" aria-label="Call MFH at 020 7123 4567">020 7123 4567</a></p>
+                                <p style="font-size: 0.875rem; color: var(--color-neutral-500);">Mon-Fri: 9am-5pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-item__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <div>
+                                <p class="contact-item__label">Email Us</p>
+                                <p><a href="mailto:info@mfhaccountants.co.uk" aria-label="Email MFH">info@mfhaccountants.co.uk</a></p>
+                                <p style="font-size: 0.875rem; color: var(--color-neutral-500);">Response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="map-placeholder" role="img" aria-label="Map showing MFH office location in Kensington, London">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" stroke="#94a3b8" stroke-width="2"/>
+                                <path d="M24 14V24L30 30" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" aria-label="Contact form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required autocomplete="name" placeholder="John Smith">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required autocomplete="email" placeholder="john@company.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" autocomplete="tel" placeholder="07123 456789">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Required *</label>
+                                <select id="service" name="service" class="form-input" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="corporate-tax">Corporate Tax Planning</option>
+                                    <option value="audit">Audit & Assurance</option>
+                                    <option value="bookkeeping">Bookkeeping</option>
+                                    <option value="advisory">Business Advisory</option>
+                                    <option value="personal-tax">Personal Tax</option>
+                                    <option value="payroll">Payroll & CIS</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">How Can We Help? *</label>
+                                <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us about your business and how we can assist..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                            
+                            <p style="font-size: 0.75rem; color: var(--color-neutral-500); margin-top: var(--space-md); text-align: center;">
+                                By submitting this form, you agree to our <a href="#" style="text-decoration: underline;">Privacy Policy</a>. We'll never share your information.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="/" class="logo" aria-label="MFH Chartered Accountants Home">
+                        <svg class="logo__svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect width="48" height="48" rx="8" fill="#c9a961"/>
+                            <path d="M24 12L32 20V32H16V20L24 12Z" fill="#1a365d"/>
+                            <path d="M24 16L28 20V28H20V20L24 16Z" fill="#c9a961"/>
+                            <circle cx="24" cy="24" r="4" fill="#1a365d"/>
+                        </svg>
+                        <span class="logo__text">MFH</span>
+                    </a>
+                    <p class="footer__description">Chartered Accountants providing expert financial services to businesses and individuals across the UK since 2003.</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__heading">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Corporate Tax</a></li>
+                        <li><a href="#">Audit & Assurance</a></li>
+                        <li><a href="#">Bookkeeping</a></li>
+                        <li><a href="#">Business Advisory</a></li>
+                        <li><a href="#">Personal Tax</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__heading">Company</h4>
+                    <ul class="footer__list">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__column">
+                    <h4 class="footer__heading">Resources</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Tax Calendar</a></li>
+                        <li><a href="#">Guides & Articles</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 MFH Chartered Accountants. All rights reserved.</p>
+                <p>Registered in England & Wales No. 12345678 | VAT No. GB 123 4567 89</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "MFH Chartered Accountants",
+      "url": "https://mfhaccountants.co.uk",
+      "logo": "https://mfhaccountants.co.uk/logo.png",
+      "description": "Chartered Accountants providing expert accounting, tax planning, audit, and advisory services to UK businesses and individuals.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 High Street, Kensington",
+        "addressLocality": "London",
+        "postalCode": "SW7 2AZ",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.4994,
+        "longitude": -0.1746
+      },
+      "telephone": "+44-20-7123-4567",
+      "email": "info@mfhaccountants.co.uk",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "priceRange": "££",
+      "founder": {
+        "@type": "Person",
+        "name": "Michael Harrison"
+      },
+      "foundingDate": "2003",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "15"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/mfh-accountants",
+        "https://twitter.com/mfhaccountants",
+        "https://www.facebook.com/mfhaccountants"
+      ]
+    }
+    </script>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking links
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+        
+        // Header Scroll Effect
+        const header = document.querySelector('.header');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Add staggered animation delay for service cards
+                    if (entry.target.classList.contains('service-card')) {
+                        const cards = document.querySelectorAll('.service-card');
+                        cards.forEach((card, index) => {
+                            if (card.classList.contains('visible')) {
+                                card.style.transitionDelay = `${index * 0.1}s`;
+                            }
+                        });
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements
+        document.querySelectorAll('.service-card, .about__content, .testimonial-card, .contact-info, .contact-form-wrapper').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Form Submission Handler
+        const contactForm = document.getElementById('contact-form');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData.entries());
+                
+                // Show success message (in production, this would send to server)
+                alert('Thank you for your message! We will respond within 24 hours.');
+                contactForm.reset();
+            });
+        }
+        
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const headerHeight = document.querySelector('.header').offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
